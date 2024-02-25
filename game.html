@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReGenesis</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ReGenesis</h1>
+    
+    <div class="resource-info">
+      <p>Resources: <span id="resources">0</span></p>
+      <p>Population: <span id="population">0</span></p>
+      <p>Resources per 3 seconds: <span id="resourcePerSecond">0</span></p>
+      <p>Farms: <span id="farms">0</span></p>
+      <p>Food per 3 seconds: <span id="food">0</span></p>
+    </div>
+
+    <button class="btn" onclick="collectResources()">Collect Resources</button>
+    <button class="btn" onclick="buildShelter()">Build Shelter (<span id="shelterCost">100</span> resources)</button>
+    <button class="btn" onclick="buildFarm()">Build Farm (<span id="farmCost">250</span> resources)</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
